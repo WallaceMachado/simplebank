@@ -1,0 +1,25 @@
+// Create a new account from goLand IDE
+
+POST http://localhost:5000/accounts
+content-Type:  application/json
+
+{
+  "owner" : "wallace machado",
+  "currency": "EUR"
+}
+
+###
+
+// Get a account from goLand IDE
+
+GET http://localhost:5000/accounts/1
+accept:  application/json
+
+###
+
+// Get accounts from goLand IDE
+
+GET http://localhost:5000/accounts?page_id=100&page_size=5
+accept:  application/json
+
+###
