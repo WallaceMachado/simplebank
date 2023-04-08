@@ -19,7 +19,7 @@ accept:  application/json
 
 // Get accounts from goLand IDE
 
-GET http://localhost:5000/accounts?page_id=100&page_size=5
+GET http://localhost:5000/accounts?page_id=1&page_size=5
 accept:  application/json
 
 ###
