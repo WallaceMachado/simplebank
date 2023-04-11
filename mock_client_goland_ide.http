@@ -26,13 +26,37 @@ accept:  application/json
 
 // Create a new transfer from goLand IDE
 
+
+
+
 POST http://localhost:5000/transfers
 content-Type:  application/json
 
 {
-  "from_account_id": 1,
-  "to_account_id": 2,
-  "Amount": 10,
-  "currency": "EUR"
+"from_account_id": 1,
+"to_account_id": 2,
+"Amount": 10,
+"currency": "EUR"
+
+}
+###
+
+POST http://localhost:5000/users
+content-Type:  application/json
+
+{
+"username":"testename",
+"password": "testepass",
+"full_name": "testefullname",
+"email":"a@b.com"
+
+}
+###
+POST http://localhost:5000/users/login
+content-Type:  application/json
+
+{
+  "username":"testename",
+  "password": "testepass"
 
 }
