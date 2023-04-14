@@ -52,4 +52,10 @@ d-inspect-network:
 d-inspect-container-postgres:
 	docker container inspect postgres12
 
-.PHONY: postgres createdb dropdb migrateup migratedown migrateup1 migratedown1 sqlc test server mock d-build d-run d-connect-network d-create-network
+dcu:
+	docker-compose up
+
+dcd:
+	docker-compose down
+
+.PHONY: postgres createdb dropdb migrateup migratedown migrateup1 migratedown1 sqlc test server mock d-build d-run d-connect-network d-create-network dcu dcd
