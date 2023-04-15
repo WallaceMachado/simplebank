@@ -20,7 +20,7 @@ migratedown1:
 	migrate -path db/migration -database "postgresql://root:mysecret@localhost:5432/simple_bank?sslmode=disable" -verbose down 1
 
 migratecreate:
-	migrate create -ext sql -dir db/migration -seq add_users
+	migrate create -ext sql -dir db/migration -seq add_sessions
 sqlc:
 	sqlc generate
 

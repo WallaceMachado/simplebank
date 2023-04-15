@@ -51,6 +51,18 @@ content-Type:  application/json
 "email":"a@b.com"
 
 }
+
+###
+POST http://localhost:5000/users
+content-Type:  application/json
+
+{
+  "username":"testename2",
+  "password": "testepass2",
+  "full_name": "testefullname2",
+  "email":"a2@b.com"
+
+}
 ###
 POST http://localhost:5000/users/login
 content-Type:  application/json
@@ -58,5 +70,15 @@ content-Type:  application/json
 {
   "username":"testename",
   "password": "testepass"
+
+}
+###
+
+POST http://localhost:5000/users/login
+content-Type:  application/json
+
+{
+  "username":"testename2",
+  "password": "testepass2"
 
 }
